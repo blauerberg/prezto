@@ -326,4 +326,4 @@ else
   print "prezto: editor: invalid key bindings: $key_bindings" >&2
 fi
 
-unset key{,map,_bindings}
+unset key{,map,bindings}

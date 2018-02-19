@@ -57,7 +57,6 @@ alias p='${(z)PAGER}'
 alias po='popd'
 alias pu='pushd'
 alias rm="${aliases[rm]:-rm} -i"
-alias sa='alias | grep -i'
 alias type='type -a'
 
 # ls
@@ -159,11 +158,7 @@ fi
 # Miscellaneous
 
 # Serves a directory via HTTP.
-if (( $+commands[python3] )); then
-  alias http-serve='python3 -m http.server'
-else
-  alias http-serve='python -m SimpleHTTPServer'
-fi
+alias http-serve='python -m SimpleHTTPServer'
 
 #
 # Functions
